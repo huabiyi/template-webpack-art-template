@@ -1,0 +1,2 @@
+<% var info = myInfo %>
+<% include('./template/index.art', info) %>

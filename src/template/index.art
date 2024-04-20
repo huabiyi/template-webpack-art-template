@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+
+<head>
+    <meta charset="UTF-8">
+    <title><%= lang + _title %></title>
+    <meta name="keywords" content="未提供">
+    <meta name="description" content="未提供">
+    <script type="text/javascript">
+        !function () {
+            function params(u, p) {
+                var m = new RegExp("(?:&|/?)" + p + "=([^&$]+)").exec(u);
+                return m ? m[1] : '';
+            }
+            if (/iphone|android|ipod/i.test(navigator.userAgent.toLowerCase()) == true && params(location.search, "from") != "mobile") {
+                location.href = '';
+            }
+        }();
+    </script>
+    <!--ignore-->
+</head>
+
+<body data-id="<%= lang %>">
+    <h1><%=lang + page%></h1>
+</body>
+</html>
